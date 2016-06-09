@@ -9,27 +9,27 @@ using namespace std;
 void imprimir_espacos(int total);
 
 int main (){
-	//Quantidade total de espaÁos
+	//Quantidade total de espa√ßos
 	int total_espacos = 50;
 	string car1, car2;
 			
-	//Salvando o Nome dos(as) Jogadores(as) na Vari·vel
-	cout << "Digite o nome do 1∫ Jogador" << endl;
+	//Salvando o Nome dos(as) Jogadores(as) na Vari√°vel
+	cout << "Digite o nome do 1¬∫ Jogador" << endl;
 	cin >> car1;
 	
-	cout << "Digite o nome do 2∫ Jogador" << endl;
+	cout << "Digite o nome do 2¬∫ Jogador" << endl;
 	cin >> car2;
 	
-	//Vari·veis Correspondente ao EspaÁo que ir· ser Imprimido para o Car1 e Car2
+	//Vari√°veis Correspondente ao Espa√ßo que ir√° ser Imprimido para o Car1 e Car2
 	int primeiro_dado=0, segundo_dado=0;
 	
-		//LaÁo 'Enquanto'
+		//La√ßo 'Enquanto'
 		while (primeiro_dado< total_espacos && segundo_dado < total_espacos){
 			cout << "Jogo de Corrida:" << endl;
 			cout << "                                          CHEGADA" << endl; 
 			
 			
-			//Gerando N˙mero AleatÛrio
+			//Gerando N√∫mero Aleat√≥rio
 			srand((int) time (0));
 			primeiro_dado = rand() % 3 + 1 + primeiro_dado;
 	
@@ -40,34 +40,34 @@ int main (){
 			imprimir_espacos(primeiro_dado);
 			cout << " -o---o" << endl;
 			
-			//Gerando N˙mero AleatÛrio
+			//Gerando N√∫mero Aleat√≥rio
 			segundo_dado = rand() % 3 + 1 + segundo_dado;
 		
-			//2∫ Carrinho
+			//2¬∫ Carrinho
 			cout << car2 << endl; 
 			imprimir_espacos(segundo_dado);
 			cout << "  __  " << endl;
 			imprimir_espacos(segundo_dado);
 			cout << " -o---o" << endl;
 		
-			system("cls");
+			system("cls"); //Limpa a Tela
 			
 		}
 		//Coferindo que Ganhou o Jogo
 		if (primeiro_dado > segundo_dado){
-			cout << "O (A) Jogador(a) " << car1 << " Venceu! ParabÈns!!!"<< endl;
+			cout << "O (A) Jogador(a) " << car1 << " Venceu! Parab√©ns!!!"<< endl;
 		}
 		else if (segundo_dado > primeiro_dado){
-			cout << "O (A) Jogador(a) " << car2 << " Venceu! ParabÈns!!!" << endl;
+			cout << "O (A) Jogador(a) " << car2 << " Venceu! Parab√©ns!!!" << endl;
 		}
 		else cout << "Os dois Carros Empataram!" << endl;	
 	
 	return 0;
 }
-//FunÁ„o mostra espaÁos em Branco na Tela, Fazendo o Carrinho Andar
+//Fun√ß√£o mostra espa√ßos em Branco na Tela, Fazendo o Carrinho Andar
 void imprimir_espacos(int total){
 		
-	//Imprime EspaÁos	
+	//Imprime Espa√ßos	
 	for (int quantidade_atual=0; quantidade_atual < total; quantidade_atual++){
 			
 		cout << " " ;	
